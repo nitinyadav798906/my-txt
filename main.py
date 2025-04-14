@@ -48,14 +48,14 @@ bot = Client(
 collection = get_collection(BOT_NAME, MONGO_URI)
 
 # Constants
-OWNER_IDS = [5957208798]  # Replace with the actual owner user IDs
+OWNER_IDS = [1714266885]  # Replace with the actual owner user IDs
 cookies_file_path = "cookies.txt"
 
 # Global variables
-log_channel_id = 1002351323436
+log_channel_id = 1002542634912
 authorized_users = []
 ALLOWED_CHANNEL_IDS = []
-my_name = "𝕰𝖓𝖌𝖎𝖓𝖊𝖊𝖗𝖘 𝕭𝖆𝖇𝖚"
+my_name = "sachin yadav nitin yadav"
 overlay = None
 accept_logs = 0
 bot_running = False
@@ -668,7 +668,7 @@ async def set_max_running_time_handler(_, message):
         await message.reply_text("❌ Invalid command. Use /set_max_running_time <hours>")
 
 #=================== TXT CALLING COMMAND ==========================
-@bot.on_message(filters.command(["txt"]) & auth_or_owner_filter)
+@bot.on_message(filters.command(["sky"]) & auth_or_owner_filter)
 async def luminant_command(bot: Client, m: Message):
     global bot_running, start_time, total_running_time, max_running_time
     global log_channel_id, my_name, overlay, accept_logs
