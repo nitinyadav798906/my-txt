@@ -8,8 +8,8 @@ from urllib.parse import quote_plus
 
 # MongoDB connection string
 # Load credentials from environment variables
-username = os.getenv("MONGODB_USERNAME", "jaibajarangclasses")
-password = os.getenv("MONGODB_PASSWORD", "Government90@")
+username = os.getenv("MONGODB_USERNAME", "")
+password = os.getenv("MONGODB_PASSWORD", "")
 escaped_password = quote_plus(password)  # URL-encode the password
 
 # Construct the connection string
